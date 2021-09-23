@@ -685,8 +685,9 @@ BUTTON
 .nav-link.w--current {
   padding-right: 0px;
   padding-left: 0px;
-  border-bottom: 4px solid #cdcdcd;
-  color: #cdcdcd;
+  border-bottom: 4px solid #fff;
+  color: #fff;
+
 }
 
 .col-2 {
@@ -2853,7 +2854,7 @@ BUTTON
     font-size: 40px;
   }
   .hero-image {
-    width: 450px;
+    width: 350px;
     margin-top: 66px;
   }
   .col-2.lg-5 {
