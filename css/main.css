@@ -8,7 +8,8 @@ body {
 .wrapper {
   max-width: 1440px;
 }
-.section.section-footer{
+
+.section.section-footer {
   padding: 50px 50px;
 }
 
@@ -40,7 +41,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
-  color: #c28753;
+  color: #b90e0a;
   font-size: 24px;
   line-height: 1.15;
   font-weight: 700;
@@ -50,7 +51,7 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
-  color: #c28753;
+  color: #b90e0a;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -136,20 +137,10 @@ blockquote {
 }
 
 .wrapper.navbar-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -233,10 +224,13 @@ NAVIGATION
 
 .nav-link-2.border.cta {
   border-style: none;
-  background-color: #c28753;
+  background-color: #000;
   color: #fff;
 }
-
+.nav-link-2.border.cta:hover{
+  background-color: rgb(27, 27, 27);
+  color: #cdcdcd;
+}
 .dropdown-link-text {
   margin-right: 20px;
   text-decoration: none;
@@ -499,9 +493,8 @@ BUTTON
 
 .button {
   padding: 16px 25px;
-  border: 1px none #096ad0;
   border-radius: 40px;
-  background-color: #c28753;
+  background-color: #b90e0a;;
   box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -513,8 +506,7 @@ BUTTON
 }
 
 .button:hover {
-  border: 1px none #096ad0;
-  background-color: #3f3700;
+  background-color: #cc0e0b;
   box-shadow: 0 6px 20px 0 rgba(1, 58, 117, 0.33);
   -webkit-transform: translate(0px, -4px);
   -ms-transform: translate(0px, -4px);
@@ -597,7 +589,7 @@ BUTTON
   width: 133.08px;
   height: 68.76px;
   left: 50%;
-  bottom: 0;
+  bottom: -40px;
 }
 
 .hero-content #pattern2 {
@@ -685,13 +677,16 @@ BUTTON
   margin-left: 16px;
   padding: 16px 0px;
   font-size: 16px;
+  font-weight: bold;
 }
-
+.nav-link:hover{
+  color: #000;
+}
 .nav-link.w--current {
   padding-right: 0px;
   padding-left: 0px;
-  border-bottom: 4px solid #c28753;
-  color: #c28753;
+  border-bottom: 4px solid #cdcdcd;
+  color: #cdcdcd;
 }
 
 .col-2 {
@@ -1008,7 +1003,7 @@ BUTTON
   max-width: 110px;
   padding: 21px;
   border-radius: 50%;
-  background-color: #c28753;
+  background-color: #b90e0a;
 }
 
 .award-image.margin-bottom {
@@ -1907,19 +1902,20 @@ BUTTON
 }
 
 .text-area::-webkit-input-placeholder {
-  color: rgba(146, 96, 0, 0.44);
+  color: #af4c4a;
 }
 
 .text-area:-ms-input-placeholder {
-  color: rgba(146, 96, 0, 0.44);
+  color: #af4c4a;
 }
 
 .text-area::-ms-input-placeholder {
-  color: rgba(146, 96, 0, 0.44);
+  color: #af4c4a;
 }
 
 .text-area::placeholder {
-  color: rgba(146, 96, 0, 0.44);
+  color: #af4c4a;
+  
 }
 
 .form {
@@ -1996,19 +1992,19 @@ BUTTON
 }
 
 .form-field::-webkit-input-placeholder {
-  color: rgba(146, 96, 0, 0.43);
+  color: #b90e0a;
 }
 
 .form-field:-ms-input-placeholder {
-  color: rgba(146, 96, 0, 0.43);
+  color: #af4c4a;
 }
 
 .form-field::-ms-input-placeholder {
-  color: rgba(146, 96, 0, 0.43);
+  color: #af4c4a;
 }
 
 .form-field::placeholder {
-  color: rgba(146, 96, 0, 0.43);
+  color: #af4c4a;
 }
 
 .map {
@@ -3085,7 +3081,6 @@ BUTTON
   }
   .col-2.lg-6 {
     width: 100%;
-    
   }
   .col-2.lg-6.md-3.xs-2 {
     width: 100%;
@@ -3109,8 +3104,7 @@ BUTTON
     width: 100%;
   }
   .col-2.lg-6 {
-    width: 50%;
-  
+    width: calc(100% - 280px);
   }
   .section-title.fullwidth-grid.margin-bottom {
     font-size: 24px;

@@ -1612,7 +1612,7 @@ textarea.w-select {
   margin-right: auto;
 }
 .w-nav-link:hover{
-  color: #E5D1B8;
+  color: #c9c9c9;
 }
 .w-nav-link.w--current {
   color: #0082f3;
@@ -1692,6 +1692,7 @@ textarea.w-select {
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
+    background-color: #b90e0a;
   }
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
